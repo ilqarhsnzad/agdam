@@ -18,6 +18,6 @@ urlpatterns = [
     path('daily-news/', views.DailyNewsListAPIView.as_view(), name='daily-news'),
     # path('category-daily-news/', views.CategoryDailyNewsListAPIView.as_view(), name='category-daily-news'),
 
-    path('categories/<int:pk>/daily-categories/', views.DailyCategoryNewsListAPIView.as_view(), name='daily-categories')
+    path('categories/<int:pk>/daily-news/', views.DailyCategoryNewsListAPIView.as_view(), name='daily-categories')
 
 ]

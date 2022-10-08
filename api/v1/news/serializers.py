@@ -9,7 +9,7 @@ class NewsSerializer(serializers.ModelSerializer):
 
 
 class CategorySerializer(serializers.ModelSerializer):
-    news = NewsSerializer(many = True)
+    # news = NewsSerializer(many = True)  
     class Meta:
         model = Category
         fields = "__all__"
